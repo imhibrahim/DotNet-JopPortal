@@ -122,8 +122,8 @@ public IActionResult MyApplications()
 
         if (userId == null)
         {
-            return RedirectToAction("Login", "Account");
-        }
+                return Redirect("/Identity/Account/Login");
+            }
 
         var jobSeeker = context.Jobseeker
             .FirstOrDefault(x => x.UserId == userId);

@@ -72,6 +72,16 @@
         padding: 10px 30px;
     }
 
+    .click{
+        text-decoration:underline;
+        color:blue;
+        transition:all 0.4s linear;
+    }
+
+    .click:hover{
+        cursor:pointer;
+        color:green;
+    }
 </style>
 
 <div class="container">
@@ -118,9 +128,7 @@
 
                     <div class="info">
                         <i class="fa-solid fa-globe"></i>
-                        <a href="@Model.Website" target="_blank">
-                            @Model.Website
-                        </a>
+                        <span class="click">@Model.Website</span>
                     </div>
 
                     @if (!string.IsNullOrEmpty(Model.Description))

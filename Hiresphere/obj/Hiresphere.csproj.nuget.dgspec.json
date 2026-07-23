@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vision-HireSphare\\Hiresphere\\Hiresphere.csproj": {}
+    "E:\\DotNet-JopPortal\\Hiresphere\\Hiresphere.csproj": {}
   },
   "projects": {
-    "E:\\Vision-HireSphare\\Hiresphere\\Hiresphere.csproj": {
+    "E:\\DotNet-JopPortal\\Hiresphere\\Hiresphere.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vision-HireSphare\\Hiresphere\\Hiresphere.csproj",
+        "projectUniqueName": "E:\\DotNet-JopPortal\\Hiresphere\\Hiresphere.csproj",
         "projectName": "Hiresphere",
-        "projectPath": "E:\\Vision-HireSphare\\Hiresphere\\Hiresphere.csproj",
+        "projectPath": "E:\\DotNet-JopPortal\\Hiresphere\\Hiresphere.csproj",
         "packagesPath": "C:\\Users\\Muhammad Ibrahim\\.nuget\\packages\\",
-        "outputPath": "E:\\Vision-HireSphare\\Hiresphere\\obj\\",
+        "outputPath": "E:\\DotNet-JopPortal\\Hiresphere\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

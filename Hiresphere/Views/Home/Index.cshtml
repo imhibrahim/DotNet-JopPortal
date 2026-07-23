@@ -7,40 +7,65 @@
                     <h1>Get Your <span>Preferred</span> Job</h1>
                     <p>Jobs, Employment & Future Career Opportunities</p>
                     <div class="banner-form-area">
-                        <form>
-                            <div class="row  justify-content-center">
+                        <form asp-action="SearchJobs" asp-controller="Home" method="get">
+
+                            <div class="row justify-content-center">
+
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Job Title">
+                                        <input type="text"
+                                               name="title"
+                                               class="form-control"
+                                               placeholder="Job Title">
+
                                         <label>
                                             <i class="icofont-search-1"></i>
                                         </label>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-4">
                                     <div class="form-group">
+
+                                        <input type="text"
+                                               name="location"
+                                               class="form-control"
+                                               placeholder="City or State">
+
                                         <label>
                                             <i class="icofont-location-pin"></i>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="City or State">
+
                                     </div>
                                 </div>
+
                                 <div class="col-lg-4">
+
                                     <div class="form-group">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option>Job Category</option>
-                                            <option>ICT</option>
-                                            <option>Finance</option>
-                                            <option>Marketing</option>
-                                            <option>Production</option>
-                                            <option>Bank</option>
-                                            <option>Hospitality</option>
-                                            <option>NGO</option>
+
+                                        <select class="form-select" name="categoryId">
+
+                                            <option value="">All Categories</option>
+
+                                            @foreach (var item in ViewBag.Categories)
+                                            {
+                                                <option value="@item.Id">
+                                                    @item.CategoryName
+                                                </option>
+                                            }
+
                                         </select>
+
                                     </div>
+
                                 </div>
+
                             </div>
-                            <button type="submit" class="btn banner-form-btn">Search</button>
+
+                            <button class="btn banner-form-btn">
+                                Search
+                            </button>
+
                         </form>
                     </div>
                 </div>
@@ -89,72 +114,59 @@
 <!-- End Jobseeker -->
 <!-- Category -->
 <section class="category-area category-area-two pt-100 pb-70">
-    <div class="container">
-        <div class="section-title">
-            <h2>Choose Your Desire Category</h2>
+    <div class="container category-section">
+
+        <div class="text-center mb-5">
+
+            <h2 class="category-title">
+                Choose Your Desire Category
+            </h2>
+
         </div>
-        <div class="row  justify-content-center">
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item wow fadeInUp" data-wow-delay=".3s">
-                    <i class="flaticon-settings"></i>
-                    <a href="blog.html">Technical Support</a>
+
+
+        <div class="row">
+
+            @foreach (var item in ViewBag.Categories)
+            {
+
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+
+                    <a asp-controller="Jobseeker"
+                       asp-action="CategoryJobs"
+                       asp-route-id="@item.Id"
+                       class="category-link">
+
+
+                        <div class="category-card">
+
+
+                            <div class="category-icon">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                            </div>
+
+
+                            <h5>
+                                @item.CategoryName
+                            </h5>
+
+
+                        </div>
+
+
+                    </a>
+
+
                 </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-two wow fadeInUp" data-wow-delay=".4s">
-                    <i class="flaticon-layers"></i>
-                    <a href="blog.html">Business Development</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-three wow fadeInUp" data-wow-delay=".5s">
-                    <i class="flaticon-house"></i>
-                    <a href="blog.html">Real Estate Business</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-four wow fadeInUp" data-wow-delay=".6s">
-                    <i class="flaticon-analysis"></i>
-                    <a href="blog.html">Share Maeket Analysis</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-five wow fadeInUp" data-wow-delay=".7s">
-                    <i class="flaticon-sun"></i>
-                    <a href="blog.html">Weather & Environment</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-six wow fadeInUp" data-wow-delay=".3s">
-                    <i class="flaticon-hand"></i>
-                    <a href="blog.html">Finance & Banking Service</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-seven wow fadeInUp" data-wow-delay=".4s">
-                    <i class="flaticon-neural"></i>
-                    <a href="blog.html">IT & Networing Sevices</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-eight wow fadeInUp" data-wow-delay=".5s">
-                    <i class="flaticon-dish"></i>
-                    <a href="blog.html">Restaurant Services</a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-lg-3">
-                <div class="category-item category-nine wow fadeInUp" data-wow-delay=".6s">
-                    <i class="icofont-fire-burn"></i>
-                    <a href="blog.html">Defence  & Fire Service</a>
-                </div>
-            </div>
-            <div class="col-sm-4   col-lg-3">
-                <div class="category-item category-ten wow fadeInUp" data-wow-delay=".7s">
-                    <i class="flaticon-truck"></i>
-                    <a href="blog.html">Home Delivery Services</a>
-                </div>
-            </div>
+
+            }
+
+
         </div>
+
+
     </div>
 </section>
 <!-- End Category -->

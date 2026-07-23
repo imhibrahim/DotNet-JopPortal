@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Vision-HireSphare\\",
+  "WorkspaceRootPath": "E:\\DotNet-JopPortal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|e:\\vision-hiresphare\\hiresphere\\views\\companylist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|solutionrelative:hiresphere\\views\\companylist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|e:\\dotnet-jopportal\\hiresphere\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|solutionrelative:hiresphere\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|e:\\vision-hiresphare\\hiresphere\\controllers\\companylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|solutionrelative:hiresphere\\controllers\\companylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|e:\\vision-hiresphare\\hiresphere\\views\\companylist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|solutionrelative:hiresphere\\views\\companylist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|e:\\dotnet-jopportal\\hiresphere\\views\\home\\searchjobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60200CA-49AB-4204-8FE6-0EA24F731D7A}|Hiresphere\\Hiresphere.csproj|solutionrelative:hiresphere\\views\\home\\searchjobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\Vision-HireSphare\\Hiresphere\\Views\\Companylist\\Details.cshtml",
-              "RelativeDocumentMoniker": "Hiresphere\\Views\\Companylist\\Details.cshtml",
-              "ToolTip": "E:\\Vision-HireSphare\\Hiresphere\\Views\\Companylist\\Details.cshtml*",
-              "RelativeToolTip": "Hiresphere\\Views\\Companylist\\Details.cshtml*",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAIwKsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-23T19:46:45.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CompanylistController.cs",
-              "DocumentMoniker": "E:\\Vision-HireSphare\\Hiresphere\\Controllers\\CompanylistController.cs",
-              "RelativeDocumentMoniker": "Hiresphere\\Controllers\\CompanylistController.cs",
-              "ToolTip": "E:\\Vision-HireSphare\\Hiresphere\\Controllers\\CompanylistController.cs*",
-              "RelativeToolTip": "Hiresphere\\Controllers\\CompanylistController.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T19:44:11.879Z",
+              "Title": "SearchJobs.cshtml",
+              "DocumentMoniker": "E:\\DotNet-JopPortal\\Hiresphere\\Views\\Home\\SearchJobs.cshtml",
+              "RelativeDocumentMoniker": "Hiresphere\\Views\\Home\\SearchJobs.cshtml",
+              "ToolTip": "E:\\DotNet-JopPortal\\Hiresphere\\Views\\Home\\SearchJobs.cshtml",
+              "RelativeToolTip": "Hiresphere\\Views\\Home\\SearchJobs.cshtml",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAMgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T20:18:35.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Vision-HireSphare\\Hiresphere\\Views\\Companylist\\Index.cshtml",
-              "RelativeDocumentMoniker": "Hiresphere\\Views\\Companylist\\Index.cshtml",
-              "ToolTip": "E:\\Vision-HireSphare\\Hiresphere\\Views\\Companylist\\Index.cshtml",
-              "RelativeToolTip": "Hiresphere\\Views\\Companylist\\Index.cshtml",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAswHgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-23T19:41:36.532Z",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\DotNet-JopPortal\\Hiresphere\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Hiresphere\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\DotNet-JopPortal\\Hiresphere\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Hiresphere\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T20:14:06.764Z",
               "EditorCaption": ""
             }
           ]

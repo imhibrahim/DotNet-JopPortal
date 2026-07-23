@@ -20,181 +20,185 @@ build_property.TargetFrameworkVersion = v8.0
 build_property.EntryPointFilePath = 
 build_property.RootNamespace = Hiresphere
 build_property.RootNamespace = Hiresphere
-build_property.ProjectDir = E:\Vision-HireSphare\Hiresphere\
+build_property.ProjectDir = E:\DotNet-JopPortal\Hiresphere\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Vision-HireSphare\Hiresphere
+build_property.MSBuildProjectDirectory = E:\DotNet-JopPortal\Hiresphere
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/Account/Login.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/Account/Logout.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/Account/Register.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/_ViewImports.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/About/about.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/About/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcYWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Admin/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Blog/blog.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Blog/blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xibG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Candidate/candidate.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Candidate/candidate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXGNhbmRpZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Category/Create.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Category/edit.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Category/edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcZWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Category/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Category/userIndex.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Category/userIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcdXNlckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Companylist/Details.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Companylist/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueWxpc3RcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Companylist/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Companylist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueWxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Contact/contact.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Contact/contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxjb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Employee/Create.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Employee/Delete.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Employee/edit.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Employee/edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcZWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Employee/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Home/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Home/Privacy.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/JobApplication/Apply.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Home/SearchJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hKb2JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DotNet-JopPortal/Hiresphere/Views/JobApplication/Apply.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cQXBwbHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/JobApplication/MyApplications.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/JobApplication/MyApplications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cTXlBcHBsaWNhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/joblist/jobdetail.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/joblist/jobdetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncam9ibGlzdFxqb2JkZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/joblist/joblist.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/joblist/joblist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncam9ibGlzdFxqb2JsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Jobseeker/CategoryJobs.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Jobseeker/CategoryJobs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic2Vla2VyXENhdGVnb3J5Sm9icy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Jobseeker/create.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Jobseeker/create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic2Vla2VyXGNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Jobseeker/viewprofile.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Jobseeker/viewprofile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic2Vla2VyXHZpZXdwcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Job/Create.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Job/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Job/Delete.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Job/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Job/Edit.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Job/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Job/Index.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Job/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Shared/Error.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Shared/_adminlayout.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Shared/_adminlayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbmxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Shared/_LoginPartial.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/_ViewImports.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/_ViewStart.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Vision-HireSphare/Hiresphere/Views/Shared/_Layout.cshtml]
+[E:/DotNet-JopPortal/Hiresphere/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j49zxwt09a

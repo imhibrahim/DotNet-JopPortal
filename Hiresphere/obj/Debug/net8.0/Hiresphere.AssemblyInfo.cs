@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hiresphere")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b88e5d4e2a1454e7e67186107bbaa6036a81c713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bb29cefddc8f0b0813d4ddb4f40fd7f61a560ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hiresphere")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hiresphere")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
