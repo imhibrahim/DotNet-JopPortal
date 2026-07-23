@@ -1,0 +1,211 @@
+﻿<style>
+
+    body {
+        background: #f5f7fb;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    .card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg,#28a745,#1f8d3b);
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+        .card-header h2 {
+            color: #fff !important;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card-header p {
+            color: #fff !important;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+    .card-body {
+        padding: 40px;
+    }
+
+    .form-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        height: 46px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        transition: .3s;
+    }
+
+    textarea.form-control {
+        height: 110px;
+        resize: none;
+    }
+
+    .form-control::placeholder {
+        font-size: 13px;
+        color: #999;
+    }
+
+    .form-control:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 10px rgba(40,167,69,.2);
+    }
+
+    .btn-success {
+        background: #28a745;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 45px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+    .text-danger {
+        font-size: 12px;
+    }
+
+    input[type=file] {
+        padding: 8px;
+        height: auto;
+    }
+
+    @@media(max-width:768px) {
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-header h2 {
+            font-size: 24px;
+        }
+
+        .btn-success {
+            width: 100%;
+        }
+    }
+
+</style>
+
+@model Hiresphere.Models.jobbseekerwithimage
+
+@{
+    ViewData["Title"] = "Complete Your Profile";
+}
+
+<div class="container py-5" style="margin-top:120px; margin-bottom:120px;">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-9">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-success text-white text-center py-4 rounded-top-4">
+
+                    <h2 class="mb-1">
+                        <i class="fa fa-user-circle me-2"></i>
+                        Complete Your Profile
+                    </h2>
+
+                    <p class="mb-0">
+                        Fill in your professional information to apply for jobs.
+                    </p>
+
+                </div>
+
+                <div class="card-body p-5">
+
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="FullName" class="form-label fw-bold"></label>
+                                <input asp-for="FullName" class="form-control form-control-lg" placeholder="Enter Full Name">
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="Email" class="form-label fw-bold"></label>
+                                <input asp-for="Email" class="form-control form-control-lg" placeholder="Enter Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="Phone" class="form-label fw-bold"></label>
+                                <input asp-for="Phone" class="form-control form-control-lg" placeholder="03XXXXXXXXX">
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="Education" class="form-label fw-bold"></label>
+                                <input asp-for="Education" class="form-control form-control-lg" placeholder="BS Computer Science">
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="Experience" class="form-label fw-bold"></label>
+                                <input asp-for="Experience" class="form-control form-control-lg" placeholder="2 Years">
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-bold">Upload Resume</label>
+                                <input asp-for="coverletter" class="form-control form-control-lg">
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <label asp-for="Address" class="form-label fw-bold"></label>
+                                <textarea asp-for="Address" rows="3" class="form-control" placeholder="Enter Address"></textarea>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <label asp-for="Skills" class="form-label fw-bold"></label>
+                                <textarea asp-for="Skills" rows="4" class="form-control" placeholder="Laravel, ASP.NET Core, SQL Server, JavaScript"></textarea>
+                            </div>
+
+                        </div>
+
+                        <input type="hidden" asp-for="UserId" />
+
+                        <div class="text-center mt-4">
+
+                            <button class="btn btn-success btn-lg px-5 rounded-pill">
+
+                                <i class="fa fa-save me-2"></i>
+
+                                Save Profile
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

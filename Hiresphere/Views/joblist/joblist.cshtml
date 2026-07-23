@@ -1,0 +1,162 @@
+﻿@model IEnumerable<Hiresphere.Models.Job>
+
+@{
+    ViewData["Title"] = "Available Jobs";
+}
+
+<div class="container py-5" style="margin:80px; margin-bottom:200px">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">Latest Job Opportunities</h2>
+        <p class="text-muted">Find your dream job and apply now.</p>
+    </div>
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <div class="job-card">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h4 class="job-title">@item.Title</h4>
+
+                        <span class="badge bg-success">
+                            @item.JobType
+                        </span>
+
+                    </div>
+
+                    <h6 class="company-name">
+                        <i class="fa-solid fa-building"></i>
+                        @item.Company?.CompanyName
+                    </h6>
+
+                    <hr />
+
+                    <div class="job-info">
+
+                        <p>
+                            <i class="fa-solid fa-layer-group"></i>
+                            <strong>Category:</strong>
+                            @item.Category?.CategoryName
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <strong>Location:</strong>
+                            @item.Location
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <strong>Salary:</strong>
+                            Rs. @item.Salary
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-user-tie"></i>
+                            <strong>Experience:</strong>
+                            @item.ExperienceRequired
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <strong>Deadline:</strong>
+                            @item.Deadline.ToString("dd MMM yyyy")
+                        </p>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <a asp-action="jobdetail"
+                           asp-route-id="@item.Id"
+                           class="btn btn-success px-4">
+
+                            View Detail
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+<style>
+
+    body{
+        background:#f5f7fb;
+    }
+
+    .job-card{
+
+        background:#fff;
+        border-radius:18px;
+        padding:25px;
+        height:100%;
+        transition:.4s;
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
+        border:1px solid #eee;
+    }
+
+    .job-card:hover{
+
+        transform:translateY(-10px);
+        box-shadow:0 20px 40px rgba(25,135,84,.25);
+        border-color:#198754;
+    }
+
+    .job-title{
+
+        font-weight:bold;
+        color:#222;
+    }
+
+    .company-name{
+
+        color:#198754;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .description{
+
+        color:#666;
+        height:70px;
+       
+    }
+
+    .job-info p{
+
+        margin-bottom:10px;
+        color:#555;
+    }
+
+    .job-info i{
+
+        color:#198754;
+        width:22px;
+    }
+
+    .btn-success{
+
+        border-radius:30px;
+        padding:10px 30px;
+        transition:.3s;
+    }
+
+    .btn-success:hover{
+
+        transform:scale(1.05);
+    }
+
+</style>

@@ -1,0 +1,85 @@
+﻿@model Hiresphere.Models.Jobseeker
+
+<div class="container d-flex justify-content-center" style="margin-top:120px; margin-bottom:120px;">
+
+    <div class="card shadow border-0" style="max-width:550px; width:100%; border-radius:20px;">
+
+        <div class="card-header text-center bg-success text-white py-4" style="border-radius:20px 20px 0 0;">
+
+            <h3 class="mb-0">
+                <i class="fa fa-user-circle"></i>
+                My Profile
+            </h3>
+
+        </div>
+
+        <div class="card-body p-4">
+
+            <h4 class="text-center fw-bold">@Model.FullName</h4>
+
+            <p class="text-center text-muted mb-4">@Model.Email</p>
+
+            <table class="table table-borderless">
+
+                <tr>
+                    <th width="35%">Phone</th>
+                    <td>@Model.Phone</td>
+                </tr>
+
+                <tr>
+                    <th>Education</th>
+                    <td>@Model.Education</td>
+                </tr>
+
+                <tr>
+                    <th>Experience</th>
+                    <td>@Model.Experience</td>
+                </tr>
+
+                <tr>
+                    <th>Address</th>
+                    <td>@Model.Address</td>
+                </tr>
+
+                <tr>
+                    <th>Skills</th>
+                    <td>@Model.Skills</td>
+                </tr>
+
+                <tr>
+                    <th>Resume</th>
+                    <td>
+                        @if (!string.IsNullOrEmpty(Model.Resume))
+                        {
+                            <a href="~/Resume/@Model.Resume"
+                               target="_blank"
+                               class="btn btn-success btn-sm">
+                                Download
+                            </a>
+                        }
+                        else
+                        {
+                            <span class="text-danger">No Resume</span>
+                        }
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="text-center mt-4">
+
+                <a asp-action="Edit"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-success px-4 rounded-pill">
+
+                    <i class="fa fa-edit"></i> Edit Profile
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

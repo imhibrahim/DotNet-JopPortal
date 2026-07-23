@@ -1,0 +1,237 @@
+﻿@model Hiresphere.Models.Job
+
+@{
+    ViewData["Title"] = "Job Details";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<div class="container py-5" style="margin-top:80px;margin-bottom:200px">
+
+    <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-lg-8">
+
+            <div class="job-card">
+
+                <div class="d-flex justify-content-between align-items-start">
+
+                    <div>
+
+                        <h2 class="fw-bold">@Model.Title</h2>
+
+                        <h5 class="text-success mt-2">
+                            <i class="fa-solid fa-building"></i>
+                            @Model.Company?.CompanyName
+                        </h5>
+
+                        <p class="text-muted">
+                            <i class="fa-solid fa-location-dot"></i>
+                            @Model.Location
+                        </p>
+
+                    </div>
+
+                    <span class="badge bg-success fs-6">
+                        @Model.JobType
+                    </span>
+
+                </div>
+
+                <hr />
+
+                <h4>Job Description</h4>
+
+                <p class="text-muted">
+                    @Model.Description
+                </p>
+
+                <hr />
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <div>
+                                <strong>Salary</strong><br />
+                                Rs. @Model.Salary
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <div>
+                                <strong>Category</strong><br />
+                                @Model.Category?.CategoryName
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div>
+                                <strong>Experience</strong><br />
+                                @Model.ExperienceRequired
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>
+                                <strong>Deadline</strong><br />
+                                @Model.Deadline.ToString("dd MMM yyyy")
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-4">
+
+            <div class="apply-card">
+
+                <h4 class="mb-4">Job Overview</h4>
+
+                <p>
+                    <i class="fa-solid fa-building"></i>
+                    <strong>Company:</strong><br />
+                    @Model.Company?.CompanyName
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>Location:</strong><br />
+                    @Model.Location
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <strong>Job Type:</strong><br />
+                    @Model.JobType
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <strong>Salary:</strong><br />
+                    Rs. @Model.Salary
+                </p>
+
+                <a asp-action="Apply"
+                   asp-controller="JobApplication"
+                   asp-action="Apply"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-success w-100 mt-3 apply-btn">
+
+                    Apply Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+
+    body {
+        background: #f5f7fa;
+    }
+
+    .job-card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 35px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .apply-card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+        position: sticky;
+        top: 30px;
+    }
+
+    .info-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+        .info-box i {
+            font-size: 30px;
+            color: #198754;
+        }
+
+    .apply-btn {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+
+        .apply-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(25,135,84,.35);
+        }
+
+    .job-card:hover {
+        box-shadow: 0 20px 40px rgba(25,135,84,.20);
+    }
+
+    .job-card {
+        background: #fff;
+        color: #212529;
+    }
+
+        .job-card h2,
+        .job-card h3,
+        .job-card h4,
+        .job-card h5,
+        .job-card h6 {
+            color: #212529;
+        }
+
+        .job-card p {
+            color: #555;
+        }
+
+    .apply-card {
+        background: #fff;
+        color: #212529;
+    }
+
+        .apply-card p,
+        .apply-card h4,
+        .apply-card strong {
+            color: #212529;
+        }
+
+</style>

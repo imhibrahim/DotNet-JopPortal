@@ -1,0 +1,98 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Hiresphere.Areas.Identity.Data
+
+@inject SignInManager<user> SignInManager
+@inject UserManager<user> UserManager
+
+<ul class="navbar-nav">
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle border-0"
+               href="#"
+               id="profileDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+
+                <div class="profile-circle">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2">
+
+                <li class="text-center mb-2">
+
+                    <div class="profile-big">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h6 class="mt-2 mb-0">
+                        @UserManager.GetUserName(User)
+                    </h6>
+
+                    <small class="text-muted">
+                        @UserManager.GetUserAsync(User).Result.Email
+                    </small>
+
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+
+                    <a class="dropdown-item"
+                       asp-controller="Jobseeker"
+                       asp-action="viewprofile">
+
+                        <i class="fa-solid fa-user me-2 text-success"></i>
+
+                        My Profile
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <form asp-area="Identity"
+                          asp-page="/Account/Logout"
+                          asp-route-returnUrl="@Url.Action("Index", "Home")">
+
+                        <button type="submit"
+                                class="dropdown-item">
+
+                            <i class="fa-solid fa-right-from-bracket me-2 text-danger"></i>
+
+                            Logout
+
+                        </button>
+
+                    </form>
+
+                </li>
+
+            </ul>
+
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">
+                Register
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">
+                Login
+            </a>
+        </li>
+    }
+
+</ul>

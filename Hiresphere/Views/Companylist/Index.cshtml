@@ -1,0 +1,136 @@
+﻿@model IEnumerable<Hiresphere.Models.Employee>
+
+@{
+    ViewData["Title"] = "Companies";
+}
+
+<div class="container py-5" style="margin-top:100px;margin-bottom:100px;">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">Our Companies</h2>
+        <p class="text-muted">Discover Top Hiring Companies</p>
+    </div>
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <div class="company-card">
+
+                    <div class="text-center">
+
+                        @if (!string.IsNullOrEmpty(item.Logo))
+                        {
+                            <img src="@item.Logo" class="company-logo">
+                        }
+                        else
+                        {
+                            <img src="https://via.placeholder.com/100" class="company-logo">
+                        }
+
+                    </div>
+
+                    <h4>@item.CompanyName</h4>
+
+                    <h6 class="text-success">@item.OwnerName</h6>
+
+             
+
+                    <hr>
+
+                    <div class="info">
+                        <p><i class="fas fa-envelope"></i> @item.Email</p>
+
+                        <p><i class="fas fa-phone"></i> @item.Phone</p>
+
+                        <p><i class="fas fa-location-dot"></i> @item.Location</p>
+
+                        <p><i class="fas fa-globe"></i> @item.Website</p>
+                    </div>
+
+                    <div class="text-center mt-3">
+
+                        <a asp-action="Details"
+                           asp-route-id="@item.Id"
+                           class="btn btn-success">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+<style>
+
+    body {
+        background: #f5f7fa;
+    }
+
+    .company-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        transition: .4s;
+        height: 100%;
+    }
+
+        .company-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0,200,83,.30);
+            border: 2px solid #00c853;
+        }
+
+    .company-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #e8fff0;
+        margin-bottom: 20px;
+    }
+
+    .company-card h4 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .company-card h6 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .desc {
+        text-align: center;
+        color: #777;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .info p {
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .info i {
+        color: #00c853;
+        width: 25px;
+    }
+
+    .btn-success {
+        border-radius: 30px;
+        padding: 8px 30px;
+    }
+
+</style>
