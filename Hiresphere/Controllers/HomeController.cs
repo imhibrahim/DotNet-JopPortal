@@ -21,6 +21,32 @@ namespace Hiresphere.Controllers
         public IActionResult Index()
         {
             ViewBag.Categories = context.Category.ToList();
+            ViewBag.Jobs = context.Job
+       .Include(x => x.Company)
+       .Include(x => x.Category)
+       .OrderByDescending(x => x.Id)
+       .Take(8)
+       .ToList();
+
+
+            ViewBag.Companies = context.Employee
+      .Take(12)
+      .ToList();
+
+            // Counters
+
+            ViewBag.JobCount = context.Job.Count();
+
+            ViewBag.ApplicationCount = context.JobApplication.Count();
+
+            ViewBag.CompanyCount = context.Employee.Count();
+
+            ViewBag.MemberCount = context.Jobseeker.Count();
+
+
+            // Agar Status mein "Accepted" hai
+            ViewBag.AppointedCount = context.JobApplication
+                .Count(x => x.Status == "Accepted");
             return View();
         }
 
